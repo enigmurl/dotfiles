@@ -4,6 +4,9 @@ syntax on
 set termguicolors
 colorscheme catppuccin_mocha
 
+" allows chaining of copy pastes
+vnoremap p P
+
 " Use vim settings, rather then vi settings (much better!)
 " This must be first, because it changes other options as a side effect.
 set nocompatible
