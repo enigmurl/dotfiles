@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/manubhat/home/extracurriculars/group_net/src'
+let g:netrw_dirhist_0='/Users/manubhat/home/enigmadux/monocurl/monocurl/monocurl'
+let g:netrw_dirhist_9='/Users/manubhat/home/academic/cs/cse105/project1/part1/src'
+let g:netrw_dirhist_8='/Users/manubhat/home/wormpool/playground'
+let g:netrw_dirhist_7='/Users/manubhat/home/extracurriculars/cp-insights/src'
+let g:netrw_dirhist_6='/Users/manubhat/home/enigmadux/monocurl/monocurl-documenter/src/lessons'
+let g:netrw_dirhist_5='/Users/manubhat/home/tmp/debugger/main.dSYM'
+let g:netrw_dirhist_4='/Users/manubhat/home/academic/cs/cse30/HW3-starter'
+let g:netrw_dirhist_3='/Users/manubhat/home/academic/cs/cse15l/list-examples-grader/student-submission'
+let g:netrw_dirhist_2='/Users/manubhat/home/tmp/jasonkongie/src/components/Valedictorian'
