@@ -4,6 +4,8 @@ syntax on
 set termguicolors
 colorscheme catppuccin_mocha
 
+set relativenumber
+
 " allows chaining of copy pastes
 vnoremap p P
 set surround

@@ -4,8 +4,18 @@ syntax on
 set termguicolors
 colorscheme catppuccin_mocha
 
+set relativenumber
+
 " allows chaining of copy pastes
 vnoremap p P
+
+" "Aliases" for commonly used commands+lazy shift finger:
+command! -bar -nargs=* -complete=file -range=% -bang W         <line1>,<line2>write<bang> <args>
+command! -bar -nargs=* -complete=file -range=% -bang Write     <line1>,<line2>write<bang> <args>
+command! -bar -nargs=* -complete=file -range=% -bang Wq        <line1>,<line2>wq<bang> <args>
+command! -bar                                  -bang Wqall     wqa<bang>
+command! -bar                                  -bang Q         quit<bang>
+
 
 " Use vim settings, rather then vi settings (much better!)
 " This must be first, because it changes other options as a side effect.
@@ -22,7 +32,7 @@ set showmode                    " always show what mode we're currently editing 
 
 set tabstop=4                   " a tab is four spaces
 set softtabstop=4               " when hitting <BS>, pretend like a tab is removed, even if spaces
-set noexpandtab                 " don't expand tabs to spaces by default
+set expandtab                   " do expand tabs to spaces by default
 set shiftwidth=4                " number of spaces to use for autoindenting
 set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
 set backspace=indent,eol,start  " allow backspacing over everything in insert mode
