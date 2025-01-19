@@ -1,0 +1,22 @@
+{
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "cmake.showOptionsMovedNotification": false,
+  "editor.accessibilitySupport": "off",
+  "editor.fontSize": 18,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "explorer.compactFolders": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.inlayHints.typeHints.enable": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ]
+}

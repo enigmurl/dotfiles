@@ -1,0 +1,8 @@
+.vimrc
+.vim
+.zshrc
+.zshenv
+.ideavimrc
+.bashrc
+.vscode_settings
+.vscode_keybindings
