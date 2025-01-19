@@ -1,0 +1,2 @@
+b abort
+b __assert_fail

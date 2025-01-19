@@ -6,3 +6,4 @@
 .bashrc
 .vscode_settings
 .vscode_keybindings
+.lldbinit
