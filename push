@@ -10,7 +10,8 @@ find . -maxdepth 1 -name ".+" -not -name ".git*" | xargs rm -r
 # copy 
 IFS=$'\r\n'
 for dotfile in $(cat targets.txt); do
-    cp -r ~/$dotfile .
+    mkdir -p $(dirname ./$dotfile)
+    cp -r ~/$dotfile ./$dotfile
     echo "including: " '"'"$dotfile"'"'
 done
 

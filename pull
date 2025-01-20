@@ -7,9 +7,11 @@ IFS=$'\r\n'
 for dotfile in $(cat targets.txt); do
     if [[ -e ~/$dotfile ]]; then
         echo "backup: " '"'"$dotfile"'"'
+        mkdir -p $(dirname ./backup/$dotfile)
         cp -r ~/$dotfile ./backup/$dotfile
     fi
 
     echo "update: " '"'"$dotfile"'"'
+    mkdir -p $(dirname ~/$dotfile)
     cp -r ./$dotfile ~/$dotfile
 done

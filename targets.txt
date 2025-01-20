@@ -7,3 +7,4 @@
 .vscode_settings
 .vscode_keybindings
 .lldbinit
+.config/nvim
