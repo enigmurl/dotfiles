@@ -1,3 +1,2 @@
-require("plugins")
-require("theme")
-require("vim")
+require("config.lazy")
+require("config.options")

@@ -1,7 +1,8 @@
-vim.g.mapleader = '\\'
+vim.g.mapleader = ' '
+vim.g.maplocalleader = '\\'
 
 -- gutter
-vim.opt.signcolumn = "yes" -- avoid layout shift with lean.nvim
+vim.o.signcolumn = "yes" -- avoid layout shift with lean.nvim
 vim.o.number = true
 vim.o.relativenumber = true
 
@@ -40,3 +41,8 @@ vim.o.smarttab = true
 
 -- Scrolling settings
 vim.o.scrolloff = 4 
+vim.o.ttyfast = true
+
+-- color scheme
+vim.cmd.colorscheme 'catppuccin'
+
