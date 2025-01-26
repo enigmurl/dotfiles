@@ -20,6 +20,20 @@ vim.api.nvim_set_keymap('n', 'gA', '<Esc>ggVG', { noremap = true, silent = true 
 vim.api.nvim_set_keymap('v', 'gA', '<Esc>ggVG', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'yA', ':let @+ = join(getline(1, "$"), "\\n") <bar> echo "Copied entire buffer"<CR>', { noremap = true, silent = true })
 
+-- easy scrolling up and down
+vim.api.nvim_set_keymap('n', '˚', '<Up>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '˚', '<Up>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '˚', '<Up>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<M-k>', '<Up>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<M-k>', '<Up>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<M-k>', '<Up>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '∆', '<Down>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '∆', '<Down>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '∆', '<Down>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<M-j>', '<Down>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<M-j>', '<Down>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<M-j>', '<Down>', { noremap = true, silent = true })
+
 -- Show the current mode in the command line
 vim.o.showmode = true
 
@@ -45,4 +59,7 @@ vim.o.ttyfast = true
 
 -- color scheme
 vim.cmd.colorscheme 'catppuccin'
+
+-- hide status for lua status
+vim.opt.showmode = false
 
