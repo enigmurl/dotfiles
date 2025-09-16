@@ -34,6 +34,12 @@ return {
             desc = "Find Buffers"
         },
         {
+            "<leader>,",
+            "<cmd>Telescope buffers<cr>",
+            mode = { "n" },
+            desc = "Find Buffers"
+        },
+        {
             "<leader>fg",
             "<cmd>Telescope live_grep<cr>",
             mode = { "n" },
@@ -50,7 +56,7 @@ return {
             "<cmd>Telescope buffers<cr>",
             mode = { "n" },
             desc = "Find Files"
-        }
+        },
     },
     opts = {
         defaults = {
@@ -58,10 +64,12 @@ return {
                 i = {
                     ["∆"] = require('telescope.actions').move_selection_next,
                     ["˚"] = require('telescope.actions').move_selection_previous,
+                    ["<esc>"] = require('telescope.actions').close
                 },
                 n = {
                     ["∆"] = require('telescope.actions').move_selection_next,
                     ["˚"] = require('telescope.actions').move_selection_previous,
+                    ["<esc>"] = require('telescope.actions').close
                 }
             }
         }

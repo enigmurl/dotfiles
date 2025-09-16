@@ -2,9 +2,13 @@
 .vim
 .zshrc
 .zshenv
+.zprofile
 .ideavimrc
 .bashrc
 .vscode_settings
 .vscode_keybindings
 .lldbinit
+.clangd
 .config/nvim
+.config/karabiner/karabiner.json
+.config/zed/settings.json

@@ -24,15 +24,19 @@ vim.api.nvim_set_keymap('n', 'yA', ':let @+ = join(getline(1, "$"), "\\n") <bar>
 vim.api.nvim_set_keymap('n', '˚', '<Up>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '˚', '<Up>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '˚', '<Up>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('c', '˚', '<S-Tab>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<M-k>', '<Up>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '<M-k>', '<Up>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<M-k>', '<Up>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('c', '<M-k>', '<S-Tab>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '∆', '<Down>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '∆', '<Down>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '∆', '<Down>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('c', '∆', '<Tab>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<M-j>', '<Down>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '<M-j>', '<Down>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<M-j>', '<Down>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('c', '<M-j>', '<Tab>', { noremap = true, silent = true })
 
 -- Show the current mode in the command line
 vim.o.showmode = true
@@ -46,6 +50,9 @@ vim.o.shiftround = true         -- Use multiples of shiftwidth for '<' and '>'
 vim.o.backspace = "indent,eol,start" -- Allow backspacing over everything in insert mode
 vim.o.autoindent = true         -- Always enable auto-indentation
 vim.o.copyindent = true         -- Copy previous indentation on autoindenting
+vim.o.breakindent = true
+vim.o.showbreak = "↳ " -- Adds a visual indicator for wrapped lines
+vim.o.linebreak = true
 
 -- Matching parentheses highlight
 vim.o.showmatch = true
